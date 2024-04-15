@@ -30,8 +30,15 @@ namespace _2324_2Y_2A_IntegProg_LoginSampleLINQ
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            MainWindow mw = new MainWindow();
-            mw.Show();
+            //MainWindow mw = new MainWindow();
+            //mw.Show();
+        }
+
+        private void btRegistration_Click(object sender, RoutedEventArgs e)
+        {
+            Window2 w2 = new Window2();
+            w2.Show();
+            this.Close();
         }
     }
 }

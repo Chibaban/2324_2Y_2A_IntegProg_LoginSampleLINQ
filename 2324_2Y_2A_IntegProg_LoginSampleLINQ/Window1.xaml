@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="Window1" Height="450" Width="800" Closed="Window_Closed" Closing="Window_Closing">
     <Grid>
-        
+        <Label Content="Welcome back" HorizontalAlignment="Left" Margin="213,124,0,0" VerticalAlignment="Top" Height="48" Width="205" FontSize="30"/>
+        <Label x:Name="lbUser" Content="@user" HorizontalAlignment="Left" Margin="418,124,0,0" VerticalAlignment="Top" Height="48" Width="345" FontSize="30"/>
+        <Button x:Name="btChangeUsername" Content="Change Username" HorizontalAlignment="Left" Height="83" Margin="86,266,0,0" VerticalAlignment="Top" Width="193" FontSize="20"/>
+        <Button x:Name="btLogs" Content="Logs" HorizontalAlignment="Center" Height="83" Margin="0,266,0,0" VerticalAlignment="Top" Width="192" FontSize="20"/>
+        <Button x:Name="btRegistration" Content="Registration" HorizontalAlignment="Left" Height="83" Margin="517,266,0,0" VerticalAlignment="Top" Width="193" FontSize="20" Click="btRegistration_Click"/>
+
     </Grid>
 </Window>

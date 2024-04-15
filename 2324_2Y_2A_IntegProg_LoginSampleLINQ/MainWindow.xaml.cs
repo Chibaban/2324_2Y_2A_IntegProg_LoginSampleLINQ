@@ -40,11 +40,11 @@ namespace _2324_2Y_2A_IntegProg_LoginSampleLINQ
             if(txtbUserName.Text.Length > 0 && txtbPassword.Text.Length > 0)
             {
                 //MessageBox.Show($"username is {txtbUserName.Text} password is {txtbPassword.Text}");
-                var loginQuery = from s in _lsDC.LoginUsers 
+                var loginQuery = from a in _lsDC.LoginUsers 
                                  where 
-                                    s.LoginID == txtbUserName.Text
+                                    a.LoginID == txtbUserName.Text
                                  //&& s.Password == txtbPassword.Text
-                                 select s;
+                                 select a;
 
                 if (loginQuery.Count() == 1)
                 {
@@ -59,6 +59,7 @@ namespace _2324_2Y_2A_IntegProg_LoginSampleLINQ
                             Log log = new Log();
                             log.LoginID = login.LoginID;
                             log.TimeStamp = cDT;
+                            log.LOG_COUNTERPART = "Login";
 
                             _lsDC.Logs.InsertOnSubmit(log);
                             _lsDC.SubmitChanges();
